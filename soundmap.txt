@@ -1,0 +1,22 @@
+Type					Note	Priority
+
+BASIC
+bass					35		req
+snare					38		req
+rimshot (almost)	40		4
+
+CYMBALS
+hihat, closed		42		3
+hihat, open			46		req
+hihat, pedal		44		3
+crash					49		2
+ride					51		5
+splash				55		7
+
+TOMS
+floor tom, low		41		6
+floor tom, high	43		6
+tom, low				45		1
+tom, low-mid		47		1
+tom, high/mid		48		1
+tom, high			50		6

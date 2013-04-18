@@ -1,9 +1,12 @@
-/* drums.h: Configures drum assignments
+/* Drum Kit for Arduino, based on VS1053 DSP
  * James Lyden <james@lyden.org>
  *
- * This file contains the mapping from MIDI note to drum name, as well as a
+ * drums.h contains the mapping from MIDI note to drum name, as well as a
  * number of drum name macros to map data into structures
  */
+
+#ifndef drums_h
+#define drums_h
 
 // Drum name to MIDI note
 #define PLAY_BASS			35
@@ -30,38 +33,39 @@
 #define SNARE		1
 #define RIMSHOT	2
 
-#define HIHAT_C	3
-#define HIHAT_O	4
+#define HIHAT		4
 #define HIHAT_P	5
 
-#define CRASH		6
-#define RIDE		7
-#define SPLASH		8
+#define CRASH		7
+#define RIDE		8
+#define SPLASH		9
 
-#define TOM_LO		9
-#define TOM_LM		10
-#define TOM_HM		11
-#define TOM_HI		12
-#define TOM_F_LO	13
-#define TOM_F_HI	14
+#define TOM_LO		10
+#define TOM_LM		11
+#define TOM_HM		12
+#define TOM_HI		13
+#define TOM_F_LO	14
+#define TOM_F_HI	15
 
-// Drum masking
-#define MASK_BASS			0x0001
-#define MASK_SNARE		0x0002
-#define MASK_RIMSHOT		0x0004
+#define DRUM_CHANNELS	16
 
-#define MASK_HIHAT_C		0x0008
-#define MASK_HIHAT_O		0x0010
-#define MASK_HIHAT_P		0x0020
+// Drum sensors
+#define SENSOR_BASS		10
+#define SENSOR_SNARE		3
+#define SENSOR_RIMSHOT	-1
 
-#define MASK_CRASH		0x0040
-#define MASK_RIDE			0x0080
-#define MASK_SPLASH		0x0100
+#define SENSOR_HIHAT		2
+#define SENSOR_HIHAT_P	11
 
-#define MASK_TOM_LO		0x0200
-#define MASK_TOM_LM		0x0400
-#define MASK_TOM_HM		0x0800
-#define MASK_TOM_HI		0x1000
-#define MASK_TOM_F_LO	0x2000
-#define MASK_TOM_F_HI	0x4000
+#define SENSOR_CRASH		-1
+#define SENSOR_RIDE		-1
+#define SENSOR_SPLASH	-1
 
+#define SENSOR_TOM_LO	1
+#define SENSOR_TOM_LM	-1
+#define SENSOR_TOM_HM	0
+#define SENSOR_TOM_HI	-1
+#define SENSOR_TOM_F_LO	-1
+#define SENSOR_TOM_F_HI	-1
+
+#endif // drums_h

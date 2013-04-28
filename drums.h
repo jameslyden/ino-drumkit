@@ -1,5 +1,7 @@
 /* Drum Kit for Arduino, based on VS1053 DSP
- * James Lyden <james@lyden.org>
+ * Copyright 2013, James Lyden <james@lyden.org>
+ * This code is licensed under the terms of the GNU General Public License.
+ * See COPYING, or refer to http://www.gnu.org/licenses, for further details.
  *
  * drums.h contains the mapping from MIDI note to drum name, as well as a
  * number of drum name macros to map data into structures
